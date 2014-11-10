@@ -64,6 +64,9 @@
                 },
                 "json": {
                     "type": "boolean"
+                },
+                "strictSSL": {
+                    "type": "boolean"
                 }
             },
             "additionalProperties": false
