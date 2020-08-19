@@ -1,0 +1,173 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "status": "OK",
+            "statusCode": "PVD000",
+            "transactionId": "24b25b84-e967-4e13-81d8-2bbcaffbe362",
+            "partyId": "52028143",
+            "sourceSystem": "web",
+            "tenantId": "truli",
+            "programList": [
+                {
+                    "displayName": "No Preference",
+                    "value": ""
+                },
+                {
+                    "displayName": "Regular (M-F 8am-5pm)",
+                    "value": "Regular"
+                },
+                {
+                    "displayName": "Extended (M-F before 8am or after 5pm)",
+                    "value": "Extended"
+                },
+                {
+                    "displayName": "Weekends",
+                    "value": "Weekends"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "status",
+        "statusCode",
+        "transactionId",
+        "partyId",
+        "sourceSystem",
+        "tenantId",
+        "programList"
+    ],
+    "properties": {
+        "status": {
+            "$id": "#/properties/status",
+            "type": "string",
+            "title": "The status schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "OK"
+            ]
+        },
+        "statusCode": {
+            "$id": "#/properties/statusCode",
+            "type": "string",
+            "title": "The statusCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "PVD000"
+            ]
+        },
+        "transactionId": {
+            "$id": "#/properties/transactionId",
+            "type": "string",
+            "title": "The transactionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "24b25b84-e967-4e13-81d8-2bbcaffbe362"
+            ]
+        },
+        "partyId": {
+            "$id": "#/properties/partyId",
+            "type": "string",
+            "title": "The partyId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "52028143"
+            ]
+        },
+        "sourceSystem": {
+            "$id": "#/properties/sourceSystem",
+            "type": "string",
+            "title": "The sourceSystem schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "web"
+            ]
+        },
+        "tenantId": {
+            "$id": "#/properties/tenantId",
+            "type": "string",
+            "title": "The tenantId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "truli"
+            ]
+        },
+        "programList": {
+            "$id": "#/properties/programList",
+            "type": "array",
+            "title": "The programList schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "displayName": "No Preference",
+                        "value": ""
+                    },
+                    {
+                        "displayName": "Regular (M-F 8am-5pm)",
+                        "value": "Regular"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/programList/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/programList/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "displayName": "No Preference",
+                                "value": ""
+                            }
+                        ],
+                        "required": [
+                            "displayName",
+                            "value"
+                        ],
+                        "properties": {
+                            "displayName": {
+                                "$id": "#/properties/programList/items/anyOf/0/properties/displayName",
+                                "type": "string",
+                                "title": "The displayName schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "No Preference"
+                                ]
+                            },
+                            "value": {
+                                "$id": "#/properties/programList/items/anyOf/0/properties/value",
+                                "type": "string",
+                                "title": "The value schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    ""
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

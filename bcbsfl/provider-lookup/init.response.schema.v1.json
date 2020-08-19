@@ -1,0 +1,95 @@
+{
+    "responseCode": 0,
+    "partyId": "52028143",
+    "transactionId": "53c5858c-a635-430a-9d01-d81a7f5b1c63",
+    "sourceSystem": "web",
+    "tenantId": "truli",
+    "data": {
+      "rules": {
+        "managePcp": "edit",
+        "editDelegate": "edit",
+        "telemedicine": "edit",
+        "inviteDelegate": "edit",
+        "manageCarePlace": "edit",
+        "manageFavoriteProvider": "edit",
+        "pcp": "edit"
+      },
+      "endpoints": [
+        {
+          "key": "putFavoriteProvider",
+          "url": "/data/v1/mycareteam/favoriteProvider",
+          "method": "PUT"
+        },
+        {
+          "key": "deleteFavoriteProvider",
+          "url": "/data/v1/mycareteam/favoriteProvider",
+          "method": "DELETE"
+        },
+        {
+          "key": "putCareTeam",
+          "url": "/data/v1/mycareteam/careTeams",
+          "method": "PUT"
+        },
+        {
+          "key": "deleteCareTeam",
+          "url": "/data/v1/mycareteam/careTeams",
+          "method": "DELETE"
+        },
+        {
+          "key": "postCareTeam",
+          "url": "/data/v1/mycareteam/careTeams",
+          "method": "POST"
+        },
+        {
+          "key": "getCareTeam",
+          "url": "/data/v1/mycareteam/careTeams",
+          "method": "GET"
+        },
+        {
+          "key": "putPcpPpo",
+          "url": "/data/v1/mycareteam/pcp/ppo",
+          "method": "PUT"
+        },
+        {
+          "key": "deletePcpPpo",
+          "url": "/data/v1/mycareteam/pcp/ppo",
+          "method": "DELETE"
+        },
+        {
+          "key": "getPcpPpo",
+          "url": "/data/v1/mycareteam/pcp/ppo",
+          "method": "GET"
+        },
+        {
+          "key": "resendInvite",
+          "url": "/data/v1/mycareteam/careTeams/resendInvite",
+          "method": "POST"
+        },
+        { "key": "putPcp", "url": "/data/v1/mycareteam/pcp", "method": "PUT" }
+      ],
+      "relationships": [
+        {
+          "personNo": "01",
+          "firstName": "GPHPSQLEZS",
+          "lastName": "KEYYFCGUXZ",
+          "dob": "1985-12-14T00:00:00.000Z",
+          "relationship": "SELF",
+          "relPartyId": 52028143,
+          "relCipId": "494227",
+          "phiInd": false,
+          "suffixName": ""
+        },
+        {
+          "personNo": "02",
+          "firstName": "KNJGRXHHIU",
+          "lastName": "QNVULJJQNR",
+          "suffixName": "",
+          "dob": "1998-03-20T00:00:00.000Z",
+          "relationship": "CHILD",
+          "relPartyId": 52029078,
+          "relCipId": "494321",
+          "phiInd": false
+        }
+      ]
+    }
+  }

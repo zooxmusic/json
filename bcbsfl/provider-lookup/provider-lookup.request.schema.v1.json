@@ -1,0 +1,362 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "transactionId": "666667788",
+            "applicationId": "1234",
+            "partyId": "string",
+            "providerKey": "string",
+            "addresses": [
+                "string"
+            ],
+            "category": {
+                "categoryCode": "string",
+                "subCategoryCode": "string"
+            },
+            "languages": [
+                "string"
+            ],
+            "networks": [
+                "string"
+            ],
+            "programs": [
+                "string"
+            ],
+            "officeHours": [
+                "string"
+            ],
+            "genders": [
+                "string"
+            ],
+            "acceptingPatients": "string",
+            "start": "string",
+            "end": "string",
+            "sortColumn": "string",
+            "sortType": "string"
+        }
+    ],
+    "required": [
+        "transactionId",
+        "applicationId",
+        "partyId",
+        "providerKey",
+        "addresses",
+        "category",
+        "languages",
+        "networks",
+        "programs",
+        "officeHours",
+        "genders",
+        "acceptingPatients",
+        "start",
+        "end",
+        "sortColumn",
+        "sortType"
+    ],
+    "properties": {
+        "transactionId": {
+            "$id": "#/properties/transactionId",
+            "type": "string",
+            "title": "The transactionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "666667788"
+            ]
+        },
+        "applicationId": {
+            "$id": "#/properties/applicationId",
+            "type": "string",
+            "title": "The applicationId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1234"
+            ]
+        },
+        "partyId": {
+            "$id": "#/properties/partyId",
+            "type": "string",
+            "title": "The partyId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "providerKey": {
+            "$id": "#/properties/providerKey",
+            "type": "string",
+            "title": "The providerKey schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "addresses": {
+            "$id": "#/properties/addresses",
+            "type": "array",
+            "title": "The addresses schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/addresses/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/addresses/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "category": {
+            "$id": "#/properties/category",
+            "type": "object",
+            "title": "The category schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "categoryCode": "string",
+                    "subCategoryCode": "string"
+                }
+            ],
+            "required": [
+                "categoryCode",
+                "subCategoryCode"
+            ],
+            "properties": {
+                "categoryCode": {
+                    "$id": "#/properties/category/properties/categoryCode",
+                    "type": "string",
+                    "title": "The categoryCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "string"
+                    ]
+                },
+                "subCategoryCode": {
+                    "$id": "#/properties/category/properties/subCategoryCode",
+                    "type": "string",
+                    "title": "The subCategoryCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "string"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "languages": {
+            "$id": "#/properties/languages",
+            "type": "array",
+            "title": "The languages schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/languages/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/languages/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "networks": {
+            "$id": "#/properties/networks",
+            "type": "array",
+            "title": "The networks schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/networks/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/networks/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "programs": {
+            "$id": "#/properties/programs",
+            "type": "array",
+            "title": "The programs schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/programs/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/programs/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "officeHours": {
+            "$id": "#/properties/officeHours",
+            "type": "array",
+            "title": "The officeHours schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/officeHours/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/officeHours/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "genders": {
+            "$id": "#/properties/genders",
+            "type": "array",
+            "title": "The genders schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    "string"
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/genders/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/genders/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    }
+                ]
+            }
+        },
+        "acceptingPatients": {
+            "$id": "#/properties/acceptingPatients",
+            "type": "string",
+            "title": "The acceptingPatients schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "start": {
+            "$id": "#/properties/start",
+            "type": "string",
+            "title": "The start schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "end": {
+            "$id": "#/properties/end",
+            "type": "string",
+            "title": "The end schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "sortColumn": {
+            "$id": "#/properties/sortColumn",
+            "type": "string",
+            "title": "The sortColumn schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
+        "sortType": {
+            "$id": "#/properties/sortType",
+            "type": "string",
+            "title": "The sortType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

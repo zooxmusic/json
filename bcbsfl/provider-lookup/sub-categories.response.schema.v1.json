@@ -1,0 +1,327 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "status": "OK",
+            "statusCode": "PVD000",
+            "transactionId": "b4010a7a-3760-4e2c-96b3-4fd68892d60b",
+            "partyId": "52028143",
+            "sourceSystem": "web",
+            "tenantId": "truli",
+            "subCategoryCode": {
+                "transactionId": 1847044647527103500,
+                "errorCode": 0,
+                "errorDescription": "",
+                "totalCount": 6,
+                "more": false,
+                "planSubCategoryList": [
+                    {
+                        "categoryCode": "",
+                        "subCategoryCode": "All",
+                        "subCategoryName": "All"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "A02",
+                        "subCategoryName": "Adolescent Medicine"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "008",
+                        "subCategoryName": "Family Practice"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "001",
+                        "subCategoryName": "General Practice"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "038",
+                        "subCategoryName": "Geriatrics"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "011",
+                        "subCategoryName": "Internal Medicine"
+                    },
+                    {
+                        "categoryCode": "01",
+                        "subCategoryCode": "P04",
+                        "subCategoryName": "Pediatrician"
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "status",
+        "statusCode",
+        "transactionId",
+        "partyId",
+        "sourceSystem",
+        "tenantId",
+        "subCategoryCode"
+    ],
+    "properties": {
+        "status": {
+            "$id": "#/properties/status",
+            "type": "string",
+            "title": "The status schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "OK"
+            ]
+        },
+        "statusCode": {
+            "$id": "#/properties/statusCode",
+            "type": "string",
+            "title": "The statusCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "PVD000"
+            ]
+        },
+        "transactionId": {
+            "$id": "#/properties/transactionId",
+            "type": "string",
+            "title": "The transactionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "b4010a7a-3760-4e2c-96b3-4fd68892d60b"
+            ]
+        },
+        "partyId": {
+            "$id": "#/properties/partyId",
+            "type": "string",
+            "title": "The partyId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "52028143"
+            ]
+        },
+        "sourceSystem": {
+            "$id": "#/properties/sourceSystem",
+            "type": "string",
+            "title": "The sourceSystem schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "web"
+            ]
+        },
+        "tenantId": {
+            "$id": "#/properties/tenantId",
+            "type": "string",
+            "title": "The tenantId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "truli"
+            ]
+        },
+        "subCategoryCode": {
+            "$id": "#/properties/subCategoryCode",
+            "type": "object",
+            "title": "The subCategoryCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "transactionId": 1847044647527103500,
+                    "errorCode": 0,
+                    "errorDescription": "",
+                    "totalCount": 6,
+                    "more": false,
+                    "planSubCategoryList": [
+                        {
+                            "categoryCode": "",
+                            "subCategoryCode": "All",
+                            "subCategoryName": "All"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "A02",
+                            "subCategoryName": "Adolescent Medicine"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "008",
+                            "subCategoryName": "Family Practice"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "001",
+                            "subCategoryName": "General Practice"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "038",
+                            "subCategoryName": "Geriatrics"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "011",
+                            "subCategoryName": "Internal Medicine"
+                        },
+                        {
+                            "categoryCode": "01",
+                            "subCategoryCode": "P04",
+                            "subCategoryName": "Pediatrician"
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "transactionId",
+                "errorCode",
+                "errorDescription",
+                "totalCount",
+                "more",
+                "planSubCategoryList"
+            ],
+            "properties": {
+                "transactionId": {
+                    "$id": "#/properties/subCategoryCode/properties/transactionId",
+                    "type": "integer",
+                    "title": "The transactionId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1847044647527103500
+                    ]
+                },
+                "errorCode": {
+                    "$id": "#/properties/subCategoryCode/properties/errorCode",
+                    "type": "integer",
+                    "title": "The errorCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        0
+                    ]
+                },
+                "errorDescription": {
+                    "$id": "#/properties/subCategoryCode/properties/errorDescription",
+                    "type": "string",
+                    "title": "The errorDescription schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "totalCount": {
+                    "$id": "#/properties/subCategoryCode/properties/totalCount",
+                    "type": "integer",
+                    "title": "The totalCount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        6
+                    ]
+                },
+                "more": {
+                    "$id": "#/properties/subCategoryCode/properties/more",
+                    "type": "boolean",
+                    "title": "The more schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        false
+                    ]
+                },
+                "planSubCategoryList": {
+                    "$id": "#/properties/subCategoryCode/properties/planSubCategoryList",
+                    "type": "array",
+                    "title": "The planSubCategoryList schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "categoryCode": "",
+                                "subCategoryCode": "All",
+                                "subCategoryName": "All"
+                            },
+                            {
+                                "categoryCode": "01",
+                                "subCategoryCode": "A02",
+                                "subCategoryName": "Adolescent Medicine"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/subCategoryCode/properties/planSubCategoryList/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/subCategoryCode/properties/planSubCategoryList/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "categoryCode": "",
+                                        "subCategoryCode": "All",
+                                        "subCategoryName": "All"
+                                    }
+                                ],
+                                "required": [
+                                    "categoryCode",
+                                    "subCategoryCode",
+                                    "subCategoryName"
+                                ],
+                                "properties": {
+                                    "categoryCode": {
+                                        "$id": "#/properties/subCategoryCode/properties/planSubCategoryList/items/anyOf/0/properties/categoryCode",
+                                        "type": "string",
+                                        "title": "The categoryCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    },
+                                    "subCategoryCode": {
+                                        "$id": "#/properties/subCategoryCode/properties/planSubCategoryList/items/anyOf/0/properties/subCategoryCode",
+                                        "type": "string",
+                                        "title": "The subCategoryCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "All"
+                                        ]
+                                    },
+                                    "subCategoryName": {
+                                        "$id": "#/properties/subCategoryCode/properties/planSubCategoryList/items/anyOf/0/properties/subCategoryName",
+                                        "type": "string",
+                                        "title": "The subCategoryName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "All"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

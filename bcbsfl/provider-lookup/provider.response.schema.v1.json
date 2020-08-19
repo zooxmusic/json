@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$ref": "#/definitions/Provider",
+    "definitions": {
+        "Provider": {
+            "type": "object",
+            "properties": {
+                "transactionID": {
+                    "type": "number"
+                },
+                "errorCode": {
+                    "type": "number"
+                },
+                "errorDescription": {
+                    "type": "string"
+                },
+                "totalCount": {
+                    "type": "number"
+                },
+                "more": {
+                    "type": "boolean"
+                },
+                "planCategoryList": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PlanCategoryList"
+                    }
+                }
+            },
+            "required": [
+                "transactionID",
+                "errorCode",
+                "errorDescription",
+                "totalCount",
+                "more",
+                "planCategoryList"
+            ],
+            "additionalProperties": false
+        },
+        "PlanCategoryList": {
+            "type": "object",
+            "properties": {
+                "categoryCode": {
+                    "type": "string"
+                },
+                "categoryName": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "categoryCode",
+                "categoryName"
+            ],
+            "additionalProperties": false
+        }
+    }
+}
